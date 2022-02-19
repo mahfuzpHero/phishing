@@ -1,97 +1,135 @@
-h1, h2, h3, h4, h5, a, p, ul, li, img, header, section, div, body {margin: 0; padding: 0;}
-
-
-
-
-
-
-
-header {
-	width: 1348px;
-	height: 84px;
-	background: #3B5998;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.main-header {
-	padding-left:184px; 
+body{
+    font-family: sans-serif;
 }
-
-
-
-.form {
-    border: 1px solid #cccccc;
+.message {
+    background-color: rgb(241, 241, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    padding: px;
+}
+.message img {
+    height: 50px;
+    width: 80px;
+    background-color: grey;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+}
+.input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.input {
+    width: 127%;
+    font-size: 15px;
     border-radius: 5px;
-    height: 420px;
-    margin: 60px auto 45px;
-    width: 641px;
+    border: 0.5px solid rgb(228, 219, 219);
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+    background-color: #f7f8f9;
+    border: none;
+    box-shadow: 2px 2px 0px rgba(128, 128, 128, 0.205);
 }
-
-.form h3 {
-	color: #333333;
-    border-bottom: 1.5px solid #cccccc;
-    font-family: tahoma;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0  20px;
-    padding: 20px 0 12px;
+input[type="submit"] {
+    background-color: rgb(85, 125, 255);
+    color: white;
+    width: 136%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
 }
-.red-box {
-	margin:24px auto 0;
-	width: 600px;
-	height: 97px;
-	background: #FFEBE8;
-	border: 1.5px solid red;
+.other-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-
-.red-box p {
-	font-size: 10.5px;
-	font-family: tahoma;
-    padding: 14px 0 0 20px;
+#or {
+    margin-left: 15px;
+    margin-right: 15px;
 }
-
-.red-box a {
-	text-decoration: none;
-	color: #3B5998;
+.or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
-.red-box a:hover {
-	text-decoration: underline;
+.or hr {
+    width: 134px;
+    color: grey;
+    height: 1px;
+    border: none;
+    background-color: black;
+    opacity: 0.3;
 }
-
-.login-form {
-	width:75%;
-	margin: 0 auto;
-	padding: 23px 0 0 0;
+#create-new-account {
+    background-color: rgb(30, 173, 68);
+    font-size: 15px;
+    color: white;
+    width: 105%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
 }
-.login-form label {
-	font-family: tahoma;
-    font-size: 13px;
-    padding: 2px 10px 3px 5px;
+#forgotten-password {
+    text-decoration: none;
+    opacity: 0.9;
+    color: rgb(85, 125, 255);
+    margin-top: 10px;
 }
-.login-form input {
-   padding: 2px 10px 3px 5px;
+.languages {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+    grid-gap: 20px;
+    line-height: 20px;
+    margin-top: 50px;
 }
-
-
-footer {
-	width: 984px;
-	margin:0 auto;
-	border-top: 1.5px solid #cccccc;
+.languages a {
+    text-decoration: none;
+    color: grey;
 }
-
-ul li {
-	display: inline;
-	margin: 0 0 0 28px;
+#language-plus {
+    border: 1px solid grey;
+    width: 20px;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
-
-ul li a {
-	text-decoration: none;
-	font-family: tahoma;
-	font-size: 10.5px;
-	color: #3B5998;
+.footer-links {
+    margin-top: 15px;
 }
-ul li a:hover {
-	text-decoration: underline;
-}	
+.footer-links a {
+    color: grey;
+    text-decoration: none;
+}
+.footer-copyright{
+    color: grey;
+    margin-top: 20px;
+}
